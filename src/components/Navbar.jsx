@@ -1,23 +1,5 @@
 import CustomLink from "./CustomLink";
-
-const links = [
-  {
-    name: "Home",
-    href: "#home",
-  },
-  {
-    name: "About",
-    href: "#about",
-  },
-  {
-    name: "Projects",
-    href: "#projects",
-  },
-  {
-    name: "Contact",
-    href: "#contact",
-  },
-];
+import { links } from "../lib/constants";
 
 const Navbar = () => {
   return (
