@@ -59,7 +59,9 @@ const Navbar = () => {
           />
         ))}
       </div>
-      <div>download cv</div>
+      <Link className="border border-white rounded-full h-[60px] flex items-center justify-center px-8 text-xs text-white hover:underline">
+        Download CV
+      </Link>
     </nav>
   );
 };
