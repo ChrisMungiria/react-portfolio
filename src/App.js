@@ -16,7 +16,9 @@ function App() {
       <div id="about">
         <About />
       </div>
-      <TechStacks />
+      <div id="stacks">
+        <TechStacks />
+      </div>
       <div id="projects">
         <Projects />
       </div>

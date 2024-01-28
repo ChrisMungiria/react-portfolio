@@ -10,7 +10,7 @@ const Hero = () => {
       <div class="relative h-full w-full bg-transparent z-0">
         <div class="absolute h-full w-full bg-[radial-gradient(#ABC241_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
       </div>
-      <div className="absolute top-0 left-0 w-full h-full flex border border-red-500 ">
+      <div className="absolute top-0 left-0 w-full h-full flex ">
         <div className="flex-[3] px-12 flex flex-col justify-center">
           <h1 className="text-6xl text-primary font-bold">
             Hi I'm{" "}
