@@ -16,3 +16,5 @@ export const links = [
     href: "#contact",
   },
 ];
+
+export const description = ["A web developer", "A mobile app developer"];

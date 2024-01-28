@@ -18,15 +18,21 @@ const Navbar = () => {
   }, [linkRefs.current]);
 
   const calculatePosition = (link) => {
-    const left = linkRefs.current[link].current.offsetLeft;
-    return left;
+    if (linkRefs.current[link].current) {
+      const left = linkRefs.current[link].current.offsetLeft;
+      return left;
+    }
+    return 0;
   };
 
   const calculateWidth = (link) => {
-    return linkRefs.current[link].current.offsetWidth;
+    if (linkRefs.current[link].current) {
+      return linkRefs.current[link].current.offsetWidth;
+    }
+    return 0;
   };
   return (
-    <nav className="fixed w-full bg-transparent flex items-center justify-between p-6 border border-green-500">
+    <nav className="fixed w-full bg-transparent flex items-center justify-between p-6">
       <Link
         to="#home"
         smooth
