@@ -32,7 +32,7 @@ const Navbar = () => {
     return 0;
   };
   return (
-    <nav className="fixed w-full bg-transparent flex items-center justify-between p-6">
+    <nav className="fixed w-full bg-transparent flex items-center justify-between p-6 z-10">
       <Link
         to="#home"
         smooth

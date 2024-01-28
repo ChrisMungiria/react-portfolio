@@ -10,7 +10,7 @@ const TextCarousel = () => {
     enter: { opacity: 1 },
     leave: { opacity: 0 },
     config: {
-      duration: 500, // duration for the transition
+      duration: 200, // duration for the transition
     },
   });
 
@@ -18,16 +18,16 @@ const TextCarousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((state) => (state + 1) % description.length);
-    }, 5000);
+    }, 2000);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div style={{ position: "relative", minHeight: "1.2em" }}>
+    <div className="min-h-5 my-5">
       {transitions((style, item) => (
         <animated.div
           style={{ ...style, position: "absolute" }}
-          className="text-Highlight font-bold p-4"
+          className="text-Highlight font-bold"
         >
           {item}
         </animated.div>

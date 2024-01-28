@@ -1,5 +1,7 @@
 import React from "react";
 import TextCarousel from "../components/TextCarousel";
+import { HashLink as Link } from "react-router-hash-link";
+import HeroImage from "../components/HeroImage";
 
 const Hero = () => {
   return (
@@ -15,8 +17,26 @@ const Hero = () => {
             <span className="block text-Highlight">Christopher Mungiria</span>
           </h1>
           <TextCarousel />
+          <div className="flex gap-4 ">
+            <Link
+              smooth
+              to="#contact"
+              className="bg-primary text-background px-10 rounded-lg text-xs py-3"
+            >
+              Get in touch
+            </Link>
+            <Link
+              smooth
+              to="#projects"
+              className="bg-Highlight text-background px-10 rounded-lg text-xs py-3"
+            >
+              View Projects
+            </Link>
+          </div>
         </div>
-        <div className="flex-1 bg-red-500 px-12"></div>
+        <div className="flex-1 flex items-center justify-center px-12">
+          <HeroImage />
+        </div>
       </div>
     </section>
   );
