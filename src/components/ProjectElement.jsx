@@ -1,7 +1,6 @@
 import { HashLink as Link } from "react-router-hash-link";
 
 const ProjectElement = ({ project }) => {
-  console.log(project);
   return (
     <Link
       to={project?.link}

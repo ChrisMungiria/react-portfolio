@@ -3,6 +3,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Hero from "./pages/Hero";
 import Projects from "./pages/Projects";
+import Questions from "./pages/Questions";
 import TechStacks from "./pages/TechStacks";
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -25,6 +26,7 @@ function App() {
       <div id="contact">
         <Contact />
       </div>
+      <Questions />
     </Router>
   );
 }

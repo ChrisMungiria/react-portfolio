@@ -88,3 +88,107 @@ export const projects = [
     image: "/assets/recipe_app.png",
   },
 ];
+
+export const categoryMenuItems = [
+  {
+    value: "Linux",
+    label: "Linux",
+  },
+  {
+    value: "Bash",
+    label: "Bash",
+  },
+  {
+    value: "Docker",
+    label: "Docker",
+  },
+  {
+    value: "SQL",
+    label: "SQL",
+  },
+  {
+    value: "CMS",
+    label: "CMS",
+  },
+  {
+    value: "Code",
+    label: "Code",
+  },
+  {
+    value: "DevOps",
+    label: "DevOps",
+  },
+];
+
+export const difficultyMenuItems = [
+  {
+    value: "easy",
+    label: "Easy",
+  },
+  {
+    value: "medium",
+    label: "Medium",
+  },
+  {
+    value: "hard",
+    label: "Hard",
+  },
+];
+
+export const limitMenuItems = [
+  ...Array.from({ length: 20 }, (_, i) => ({
+    value: i + 1,
+    label: i + 1,
+  })),
+];
+
+export const tagsMenuItems = [
+  {
+    value: "BASH",
+    label: "BASH",
+  },
+  {
+    value: "DevOps",
+    label: "DevOps",
+  },
+  {
+    value: "Docker",
+    label: "Docker",
+  },
+  {
+    value: "HTML",
+    label: "HTML",
+  },
+  {
+    value: "JavaScript",
+    label: "JavaScript",
+  },
+  {
+    value: "Kubernetes",
+    label: "Kubernetes",
+  },
+  {
+    value: "Laravel",
+    label: "Laravel",
+  },
+  {
+    value: "Linux",
+    label: "Linux",
+  },
+  {
+    value: "MySQL",
+    label: "MySQL",
+  },
+  {
+    value: "PHP",
+    label: "PHP",
+  },
+  {
+    value: "Python",
+    label: "Python",
+  },
+  {
+    value: "WordPress",
+    label: "WordPress",
+  },
+];
