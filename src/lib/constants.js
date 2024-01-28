@@ -46,3 +46,45 @@ export const techStacks = [
       "Not so much a tech stack but a platform I use to develop websites and applications. I am familiar with the various tools on the platform, to create designs to guide me through th development process.",
   },
 ];
+
+export const projects = [
+  {
+    category: "React",
+    name: "Car showcase project",
+    tags: ["api", "front-end", "reactjs", "nextjs"],
+    image: "/assets/car_showcase.png",
+  },
+  {
+    category: "React",
+    name: "Expense Tracker",
+    tags: ["front-end", "redux", "reactjs"],
+    image: "/assets/expense_tracker.png",
+    link: "https://github.com/ChrisMungiria/expense-tracker",
+  },
+  {
+    category: "React",
+    name: "Image Gallery",
+    tags: ["front-end", "reactjs", "api"],
+    image: "/assets/image_gallery.png",
+  },
+  {
+    category: "React Native",
+    name: "Greenleaf",
+    tags: ["iot", "react-native", "expo", "firebase"],
+    image: "/assets/greenleaf.png",
+    link: "https://github.com/ChrisMungiria/greenleaf",
+  },
+  {
+    category: "React Native",
+    name: "Live score",
+    tags: ["react-native", "expo", "api"],
+    image: "/assets/live_score.png",
+    link: "https://github.com/ChrisMungiria/live_score",
+  },
+  {
+    category: "React Native",
+    name: "Recipe App",
+    tags: ["react-native", "expo", "api", "youtube iframe"],
+    image: "/assets/recipe_app.png",
+  },
+];
