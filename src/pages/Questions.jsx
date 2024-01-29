@@ -1,5 +1,6 @@
 import { useState } from "react";
 import CustomDropDown from "../components/CustomDropDown";
+import QuestionsComponent from "../components/QuestionsComponent";
 
 const Questions = () => {
   const [category, setCategory] = useState("");
@@ -7,9 +8,6 @@ const Questions = () => {
   const [difficulty, setDifficulty] = useState("");
   const [tags, setTags] = useState("");
 
-  const seeValues = () => {
-    console.log(category, limit, difficulty, tags);
-  };
   return (
     <section className="w-screen h-screen bg-background p-28">
       <h1 className="text-4xl font-bold text-white">
@@ -42,12 +40,12 @@ const Questions = () => {
           </div>
         </div>
 
-        <button
-          className="p-4 bg-Highlight flex mx-auto my-5"
-          onClick={seeValues}
-        >
-          See values
-        </button>
+        <QuestionsComponent
+          category={category}
+          limit={limit}
+          difficulty={difficulty}
+          tags={tags}
+        />
       </div>
     </section>
   );
