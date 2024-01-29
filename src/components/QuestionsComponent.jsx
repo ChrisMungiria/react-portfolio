@@ -101,6 +101,10 @@ const QuestionsComponent = (props) => {
   // Handle the end of questions
   const handleSubmit = () => {
     alert(`You scored ${score} out of ${questions.length}`);
+    setQuestions([]);
+    setCorrectAnswer(null);
+    setUserSelection(null);
+    setCurrentQuestion(0);
   };
   return (
     <div>
