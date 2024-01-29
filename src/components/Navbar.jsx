@@ -5,6 +5,7 @@ import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState(links[0].href); // default to the first link
+  const [isAtTop, setIsAtTop] = useState(true);
   const linkRefs = useRef(
     links.reduce(
       (acc, link) => ({ ...acc, [link.href]: React.createRef() }),
@@ -31,8 +32,22 @@ const Navbar = () => {
     }
     return 0;
   };
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 0) {
+        setIsAtTop(false);
+      } else {
+        setIsAtTop(true);
+      }
+    });
+  }, []);
   return (
-    <nav className="fixed w-full bg-transparent flex items-center justify-between p-6 z-30">
+    <nav
+      className={`fixed w-full bg-transparent flex items-center justify-between p-6 z-30
+      ${!isAtTop && "bg-primary backdrop-filter backdrop-blur-md"}
+      `}
+    >
       <Link
         to="#home"
         smooth
