@@ -44,7 +44,7 @@ const Navbar = () => {
   }, []);
   return (
     <nav
-      className={`fixed w-full bg-transparent flex items-center justify-between p-6 z-30
+      className={`fixed w-full bg-transparent flex items-center sm:justify-between justify-center p-6 z-30
       ${!isAtTop && "bg-primary backdrop-filter backdrop-blur-md"}
       `}
     >
@@ -55,7 +55,7 @@ const Navbar = () => {
       >
         Christopher <br /> Mungiria
       </Link>
-      <div className="flex items-center justify-between border border-primary h-[60px] rounded-full p-[5px] relative">
+      <div className="md:flex items-center hidden justify-between border border-primary h-[60px] rounded-full p-[5px] relative">
         <div
           className="h-4/5 absolute transition-all duration-300 bg-primary rounded-full z-[-1]"
           style={{
@@ -74,7 +74,7 @@ const Navbar = () => {
           />
         ))}
       </div>
-      <Link className="border border-white rounded-full h-[60px] flex items-center justify-center px-8 text-xs text-white hover:underline">
+      <Link className="border border-white rounded-full h-[60px] sm:flex hidden items-center justify-center px-8 text-xs text-white hover:underline">
         Download CV
       </Link>
     </nav>
