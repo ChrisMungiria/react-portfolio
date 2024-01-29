@@ -5,14 +5,14 @@ import { BsChevronDoubleDown } from "react-icons/bs";
 
 const About = () => {
   return (
-    <section className="w-screen h-screen bg-background p-28 relative">
+    <section className="w-screen h-screen bg-background sm:p-28 p-10 relative">
       <div className="flex items-center justify-between">
-        <h1 className="text-6xl font-bold text-white">
+        <h1 className="md:text-6xl text-3xl font-bold text-white">
           A little <span className="text-Highlight">about me</span>
         </h1>
         <AboutImage />
       </div>
-      <p className="text-white text-lg w-2/3">
+      <p className="text-white text-lg sm:w-2/3 w-full">
         I started developing web pages in{" "}
         <span className="text-Highlight">HTML, CSS</span> and{" "}
         <span className="text-Highlight">JavaScript</span>, I then moved on to a

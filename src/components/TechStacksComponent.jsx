@@ -5,7 +5,7 @@ const TechStacksComponent = () => {
   const [activeTechStack, setActiveTechStack] = useState(techStacks[0]);
 
   return (
-    <div className="mt-20 flex">
+    <div className="mt-20 flex flex-col sm:flex-row">
       <div className="flex gap-3">
         <div className="h-full w-2  bg-primary rounded-3xl">
           <div
@@ -46,7 +46,7 @@ const TechStacksComponent = () => {
           })}
         </div>
       </div>
-      <p className="text-white ml-5 w-2/3 text-2xl">
+      <p className="text-white ml-5 w-2/3 smLtext-2xl text-base">
         {activeTechStack.description}
       </p>
     </div>

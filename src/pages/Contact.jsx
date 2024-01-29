@@ -5,32 +5,38 @@ import { HashLink as Link } from "react-router-hash-link";
 
 const Contact = () => {
   return (
-    <section className="w-screen h-screen p-28 bg-background">
-      <h1 className="text-4xl font-bold text-white">
+    <section className="w-screen h-full p-28 bg-background">
+      <h1 className="md:text-4xl text-2xl font-bold text-white">
         Some ways you can <span className="text-Highlight">talk to me...</span>
       </h1>
-      <div className="flex items-center justify-center gap-5 flex-wrap mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 place-items-center mt-5">
         <Link
           to="mailto:mungiria01@gmail.com"
-          className="w-1/3 h-20 flex items-center"
+          className="h-20 flex items-center"
         >
-          <CiMail size={40} className="text-Highlight" />
-          <p className="text-white text-xl ml-5">mungiria01@gmail.com</p>
+          <CiMail size={20} className="text-Highlight" />
+          <p className="text-white md:text-xl text-base ml-5">
+            mungiria01@gmail.com
+          </p>
         </Link>
         <Link
           to="https://www.linkedin.com/in/christopher-mungiria/"
-          className="w-1/3 h-20 flex items-center"
+          className="h-20 flex items-center"
         >
-          <CiLinkedin size={40} className="text-Highlight" />
-          <p className="text-white text-xl ml-5">Christopher Mungiria</p>
+          <CiLinkedin size={20} className="text-Highlight" />
+          <p className="text-white text-base md:text-xl ml-5">
+            Christopher Mungiria
+          </p>
         </Link>
-        <Link to="tel:+254705332395" className="w-1/3 h-20 flex items-center">
-          <FaPhoneVolume size={40} className="text-Highlight" />
-          <p className="text-white text-xl ml-5">+254 705 332 395</p>
+        <Link to="tel:+254705332395" className="h-20 flex items-center">
+          <FaPhoneVolume size={20} className="text-Highlight" />
+          <p className="text-white text-base md:text-xl ml-5">
+            +254 705 332 395
+          </p>
         </Link>
-        <Link to="tel:+254705332395" className="w-1/3 h-20 flex items-center">
-          <FaGithub size={40} className="text-Highlight" />
-          <p className="text-white text-xl ml-5">ChrisMungiria</p>
+        <Link to="tel:+254705332395" className="h-20 flex items-center">
+          <FaGithub size={20} className="text-Highlight" />
+          <p className="text-white text-base md:text-xl ml-5">ChrisMungiria</p>
         </Link>
       </div>
       <div className="max-w-lg w-10/12 flex flex-col gap-3 mx-auto">

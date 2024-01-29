@@ -6,11 +6,11 @@ import { projects } from "../lib/constants";
 const Projects = () => {
   const [selected, setSelected] = useState("All");
   return (
-    <section className="w-screen h-screen bg-background relative">
+    <section className="w-screen h-fit bg-background relative">
       {/* Background from 'https://bg.ibelick.com/' */}
       <div class="absolute bottom-0 left-[3%] right-0 top-[0%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(171,194,65,.15),rgba(255,255,255,0))]"></div>
-      <div className="p-28 relative">
-        <h1 className="text-4xl font-bold text-white">
+      <div className="sm:p-28 relative p-10">
+        <h1 className="md:text-4xl text-2xl font-bold text-white">
           My <span className="text-Highlight">Projects.</span>
         </h1>
         <div className="flex gap-4 mt-5">

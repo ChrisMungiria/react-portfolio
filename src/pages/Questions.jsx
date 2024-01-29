@@ -9,8 +9,8 @@ const Questions = () => {
   const [tags, setTags] = useState("");
 
   return (
-    <section className="w-screen h-screen bg-background p-28">
-      <h1 className="text-4xl font-bold text-white">
+    <section className="w-screen h-screen bg-background sm:p-28 p-10">
+      <h1 className="md:text-4xl text-2xl font-bold text-white">
         This section is powered by{" "}
         <span className="text-Highlight">QuizAPI.</span>
       </h1>
@@ -21,7 +21,7 @@ const Questions = () => {
             *these parameters are optional
           </span>
         </h2>
-        <div className="grid grid-cols-2 gap-5 mt-5 place-items-center">
+        <div className="grid sm:grid-cols-2 grid-cols-1 gap-5 mt-5 place-items-center">
           <div className="flex items-center gap-2 max-w-xs">
             <p className="text-white">Category: </p>
             <CustomDropDown type="category" setValue={setCategory} />
