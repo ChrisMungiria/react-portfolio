@@ -1,6 +1,6 @@
 # This is a version of my portfolio written in ReactJS
+## The live link can be found here [here](https://chrismungiria.github.io/react-portfolio/)
 ## The HTML/CSS version can be found [here](https://chrismungiria.github.io/mungiria_portfolio/)
-
 # Questions
 1. What is ```npm``` ?
    - Node Package Manager (npm) is a package manager for JavaScript, which allows devlopers to install, share and manage third-party packages. ```npm``` also hosts a public repository where developers can publish their packages.
