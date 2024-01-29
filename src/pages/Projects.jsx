@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <section className="w-screen h-fit bg-background relative">
       {/* Background from 'https://bg.ibelick.com/' */}
-      <div class="absolute bottom-0 left-[3%] right-0 top-[0%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(171,194,65,.15),rgba(255,255,255,0))]"></div>
+      <div class="absolute bottom-0 left-[3%] right-0 top-[0%] sm:h-[500px] sm:w-[500px] h-[100px] w-[100px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(171,194,65,.15),rgba(255,255,255,0))]"></div>
       <div className="sm:p-28 relative p-10">
         <h1 className="md:text-4xl text-2xl font-bold text-white">
           My <span className="text-Highlight">Projects.</span>

@@ -5,7 +5,7 @@ import { HashLink as Link } from "react-router-hash-link";
 
 const Contact = () => {
   return (
-    <section className="w-screen h-full p-28 bg-background">
+    <section className="w-screen h-full sm:p-28 p-10 bg-background">
       <h1 className="md:text-4xl text-2xl font-bold text-white">
         Some ways you can <span className="text-Highlight">talk to me...</span>
       </h1>

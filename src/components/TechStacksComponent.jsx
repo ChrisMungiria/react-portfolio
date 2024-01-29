@@ -36,7 +36,7 @@ const TechStacksComponent = () => {
                   activeTechStack.label === techStack.label
                     ? "text-white"
                     : "text-primary"
-                } font-bold text-2xl`}
+                } font-bold sm:text-2xl text-lg`}
                 key={techStack.label}
                 onClick={() => setActiveTechStack(techStack)}
               >

@@ -6,7 +6,7 @@ const AboutImage = () => {
       <img
         src="/assets/about_image.png"
         alt="about_image"
-        className="w-full h-full object-cover"
+        className="sm:w-full sm:h-full object-cover w-[175.735px] h-[150px]"
       />
     </div>
   );

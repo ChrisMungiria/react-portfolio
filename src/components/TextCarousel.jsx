@@ -27,7 +27,7 @@ const TextCarousel = () => {
       {transitions((style, item) => (
         <animated.div
           style={{ ...style, position: "absolute" }}
-          className="text-Highlight font-bold"
+          className="text-Highlight font-bold text-center sm:text-start"
         >
           {item}
         </animated.div>
