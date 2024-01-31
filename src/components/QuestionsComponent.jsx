@@ -77,15 +77,18 @@ const QuestionsComponent = (props) => {
   const handleFetchQuestions = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("https://quizapi.io/api/v1/questions", {
-        params: {
-          limit,
-          category,
-          tags,
-          difficulty,
-          apiKey: process.env.REACT_APP_QUIZ_API_KEY,
-        },
-      });
+      const response = await axios.get(
+        "https://quizapi.io/api/v1/questions?apiKey=14WIAA6bSA34ZtQ6WtQsQDhVKIuIow7hXCp3Gdtj",
+        {
+          params: {
+            limit,
+            category,
+            tags,
+            difficulty,
+            apiKey: process.env.REACT_APP_QUIZ_API_KEY,
+          },
+        }
+      );
       console.log(response.data);
       setQuestions(response.data);
       setLoading(false);
